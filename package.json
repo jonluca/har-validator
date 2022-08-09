@@ -1,0 +1,79 @@
+{
+  "name": "har-validator-compiled",
+  "version": "0.0.0-development",
+  "license": "MIT",
+  "author": "Jonluca DeCaro <harvalidator@jonlu.ca>",
+  "description": "Validate a HAR file using a compiled AJV schema validator",
+  "types": "dist/mjs/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "sideEffects": false,
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "keywords": [
+    "har",
+    "validator",
+    "ajv",
+    "json",
+    "api",
+    "converter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonluca/har-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonluca/har-validator/issues"
+  },
+  "homepage": "https://github.com/jonluca/har-validator",
+  "scripts": {
+    "prepublishOnly": "yarn schema:compile && yarn build",
+    "lint": "eslint src",
+    "schema:compile": "node scripts/compile-har-schema.mjs",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node scripts/fixup.js",
+    "typecheck": "tsc --noEmit",
+    "prettier": "prettier --write \"**/*.+(js|jsx|ts|tsx|har||json|css|md)\"",
+    "test": "vitest --coverage",
+    "test:update": "vitest -u",
+    "test:watch": "vitest -w"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/ajv": "^1.0.0",
+    "@types/eslint": "8.4.5",
+    "@types/har-format": "^1.2.8",
+    "@types/node": "^18.6.5",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "ajv": "^8.11.0",
+    "ajv-formats": "^2.1.1",
+    "c8": "^7.12.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "har-schema": "^2.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "4.7.4",
+    "vitest": "^0.21.0"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,jsx,tsx}": [
+      "eslint --cache --fix"
+    ],
+    "**/*.{js,ts,jsx,tsx,json,md}": [
+      "prettier --write"
+    ]
+  }
+}

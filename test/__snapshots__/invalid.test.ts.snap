@@ -1,0 +1,2493 @@
+// Vitest Snapshot v1
+
+exports[`Throws error on invalid HAR > Doesn't crash on invalid json 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "CUSTOM",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "bar0",
+                },
+                {
+                  "name": "foo3",
+                  "value": "bar3",
+                },
+                {
+                  "name": "foo1",
+                  "value": "bar1",
+                },
+              ],
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "testloadimpact",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "CUSTOM",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "bar0",
+                },
+                {
+                  "name": "foo3",
+                  "value": "bar3",
+                },
+                {
+                  "name": "foo1",
+                  "value": "bar1",
+                },
+              ],
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > ServerService-GetNavigationMenu2-fiddler.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": "fe80::f020:6c27:60d:9b9c%7",
+    "instancePath": "/log/entries/0/serverIPAddress",
+    "keyword": "format",
+    "message": "must match format \\"ipv4\\"",
+    "params": {
+      "format": "ipv4",
+    },
+    "parentSchema": {
+      "format": "ipv4",
+    },
+    "schema": "ipv4",
+    "schemaPath": "#/properties/serverIPAddress/oneOf/0/format",
+  },
+  {
+    "data": "fe80::f020:6c27:60d:9b9c%7",
+    "instancePath": "/log/entries/0/serverIPAddress",
+    "keyword": "format",
+    "message": "must match format \\"ipv6\\"",
+    "params": {
+      "format": "ipv6",
+    },
+    "parentSchema": {
+      "format": "ipv6",
+    },
+    "schema": "ipv6",
+    "schemaPath": "#/properties/serverIPAddress/oneOf/1/format",
+  },
+  {
+    "data": "fe80::f020:6c27:60d:9b9c%7",
+    "instancePath": "/log/entries/0/serverIPAddress",
+    "keyword": "oneOf",
+    "message": "must match exactly one schema in oneOf",
+    "params": {
+      "passingSchemas": null,
+    },
+    "parentSchema": {
+      "oneOf": [
+        {
+          "format": "ipv4",
+        },
+        {
+          "format": "ipv6",
+        },
+      ],
+      "type": "string",
+    },
+    "schema": [
+      {
+        "format": "ipv4",
+      },
+      {
+        "format": "ipv6",
+      },
+    ],
+    "schemaPath": "#/properties/serverIPAddress/oneOf",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "CUSTOM",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "bar0",
+                },
+                {
+                  "name": "foo3",
+                  "value": "bar3",
+                },
+                {
+                  "name": "foo1",
+                  "value": "bar1",
+                },
+              ],
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "testloadimpact",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "CUSTOM",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "bar0",
+                },
+                {
+                  "name": "foo3",
+                  "value": "bar3",
+                },
+                {
+                  "name": "foo1",
+                  "value": "bar1",
+                },
+              ],
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > add.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "cache": {},
+          "request": {
+            "bodySize": 178,
+            "cookies": [
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "lu",
+                "secure": false,
+                "value": "ThXKtTkQpL1SnRdVcfeS7Qig",
+              },
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "presence",
+                "secure": false,
+                "value": "EM335522555EuserFA2805400153A2EstateFDsb2F0Et2F_5b_5dElm2FnullEuct2F1335513067BEtrFA2loadA2EtwF1218014214EatF1335522555093G335522555490EsndF1EnotF0CEchFDp_5f805400153F13CC",
+              },
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "s",
+                "secure": false,
+                "value": "Aa4rwovP9qbmuhoT",
+              },
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "c_user",
+                "secure": false,
+                "value": "805400153",
+              },
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "xs",
+                "secure": false,
+                "value": "6%3AjUE6mv60Jb_BGw%3A0%3A1334916022",
+              },
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "datr",
+                "secure": false,
+                "value": "6EKNT_YeMBxrGhWHhmewQfzd",
+              },
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "p",
+                "secure": false,
+                "value": "2",
+              },
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "locale",
+                "secure": false,
+                "value": "en_US",
+              },
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "wd",
+                "secure": false,
+                "value": "1639x403",
+              },
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "act",
+                "secure": false,
+                "value": "1335524628995%2F1%3A2",
+              },
+              {
+                "expires": null,
+                "httpOnly": false,
+                "name": "_e_4zt1_1",
+                "secure": false,
+                "value": "%5B%224zt1%22%2C1335524628996%2C%22act%22%2C1335524628995%2C1%2C%22submit%22%2C%22click%22%2C%22click%22%2C%22-%22%2C%22r%22%2C%22%2Fapps%2F204230056283590%2Fpermissions%22%2C%7B%22ft%22%3A%7B%7D%2C%22gt%22%3A%7B%7D%7D%2C0%2C0%2C0%2C0%2C16%5D",
+              },
+            ],
+            "headers": [
+              {
+                "name": "Origin",
+                "value": "https://developers.facebook.com",
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip,deflate,sdch",
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-GB,en;q=0.8,en-US;q=0.6",
+              },
+              {
+                "name": "X-SVN-Rev",
+                "value": "548314",
+              },
+              {
+                "name": "Cookie",
+                "value": "datr=6EKNT_YeMBxrGhWHhmewQfzd; lu=ThXKtTkQpL1SnRdVcfeS7Qig; s=Aa4rwovP9qbmuhoT; c_user=805400153; xs=6%3AjUE6mv60Jb_BGw%3A0%3A1334916022; presence=EM335522555EuserFA2805400153A2EstateFDsb2F0Et2F_5b_5dElm2FnullEuct2F1335513067BEtrFA2loadA2EtwF1218014214EatF1335522555093G335522555490EsndF1EnotF0CEchFDp_5f805400153F13CC; p=2; locale=en_US; wd=1639x403; act=1335524628995%2F1%3A2; _e_4zt1_1=%5B%224zt1%22%2C1335524628996%2C%22act%22%2C1335524628995%2C1%2C%22submit%22%2C%22click%22%2C%22click%22%2C%22-%22%2C%22r%22%2C%22%2Fapps%2F204230056283590%2Fpermissions%22%2C%7B%22ft%22%3A%7B%7D%2C%22gt%22%3A%7B%7D%7D%2C0%2C0%2C0%2C0%2C16%5D",
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive",
+              },
+              {
+                "name": "Content-Length",
+                "value": "178",
+              },
+              {
+                "name": "Accept-Charset",
+                "value": "ISO-8859-1,utf-8;q=0.7,*;q=0.3",
+              },
+              {
+                "name": "Host",
+                "value": "developers.facebook.com",
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.162 Safari/535.19",
+              },
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+              {
+                "name": "Accept",
+                "value": "*/*",
+              },
+              {
+                "name": "Referer",
+                "value": "https://developers.facebook.com/apps/204230056283590/permissions",
+              },
+            ],
+            "headersSize": 1205,
+            "httpVersion": "HTTP/1.1",
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "members[0]",
+                  "value": "688665303",
+                },
+                {
+                  "name": "text_members[0]",
+                  "value": "Fran%20Jackson",
+                },
+                {
+                  "name": "submit",
+                  "value": "Submit",
+                },
+                {
+                  "name": "appid",
+                  "value": "204230056283590",
+                },
+                {
+                  "name": "role",
+                  "value": "administrators",
+                },
+                {
+                  "name": "__d",
+                  "value": "1",
+                },
+                {
+                  "name": "fb_dtsg",
+                  "value": "AQCOcVrk",
+                },
+                {
+                  "name": "__user",
+                  "value": "805400153",
+                },
+                {
+                  "name": "phstamp",
+                  "value": "1658167799986114107147",
+                },
+              ],
+              "text": "members[0]=688665303&text_members[0]=Fran%20Jackson&submit=Submit&appid=85339397438&role=administrators&__d=1&fb_dtsg=AQCOcVrk&__user=805400153&phstamp=1658167799986114107147",
+            },
+            "queryString": [
+              {
+                "name": "__a",
+                "value": "1",
+              },
+            ],
+            "url": "https://developers.facebook.com/ajax/permissions/add?__a=1",
+          },
+          "response": {
+            "bodySize": 874,
+            "content": {
+              "compression": 1984,
+              "mimeType": "application/x-javascript",
+              "size": 2858,
+            },
+            "cookies": [
+              {
+                "domain": ".facebook.com",
+                "expires": "1970-01-01T00:00:01.000Z",
+                "httpOnly": true,
+                "name": "_e_4zt1_1",
+                "path": "/",
+                "secure": false,
+                "value": "deleted",
+              },
+            ],
+            "headers": [
+              {
+                "name": "Date",
+                "value": "Fri, 27 Apr 2012 11:03:49 GMT",
+              },
+              {
+                "name": "Content-Encoding",
+                "value": "gzip",
+              },
+              {
+                "name": "X-Content-Type-Options",
+                "value": "nosniff",
+              },
+              {
+                "name": "Transfer-Encoding",
+                "value": "chunked",
+              },
+              {
+                "name": "P3P",
+                "value": "CP=\\"Facebook does not have a P3P policy. Learn why here: http://fb.me/p3p\\"",
+              },
+              {
+                "name": "X-Cnection",
+                "value": "close",
+              },
+              {
+                "name": "X-XSS-Protection",
+                "value": "1; mode=block",
+              },
+              {
+                "name": "Pragma",
+                "value": "no-cache",
+              },
+              {
+                "name": "X-FB-Debug",
+                "value": "PqJRM+zuJ771UD3UmTq6jTgibDmoAqJd9hl8x7X8ACE=",
+              },
+              {
+                "name": "X-Frame-Options",
+                "value": "DENY",
+              },
+              {
+                "name": "Content-Type",
+                "value": "application/x-javascript; charset=utf-8",
+              },
+              {
+                "name": "Cache-Control",
+                "value": "private, no-cache, no-store, must-revalidate",
+              },
+              {
+                "name": "Set-Cookie",
+                "value": "_e_4zt1_1=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.facebook.com; httponly, wd=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.facebook.com; httponly",
+              },
+              {
+                "name": "Expires",
+                "value": "Sat, 01 Jan 2000 00:00:00 GMT",
+              },
+            ],
+            "headersSize": 742,
+            "httpVersion": "HTTP/1.1",
+            "redirectURL": "",
+            "status": 200,
+            "statusText": "OK",
+          },
+          "startedDateTime": "2012-04-27T11:03:49.016Z",
+          "time": 526,
+          "timings": {
+            "blocked": 0,
+            "connect": -1,
+            "dns": -1,
+            "receive": 2,
+            "send": 0,
+            "ssl": -1,
+            "wait": 523,
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > base-path.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "GET",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "bar0",
+                },
+                {
+                  "name": "foo3",
+                  "value": "bar3",
+                },
+                {
+                  "name": "foo1",
+                  "value": "bar1",
+                },
+              ],
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "http://example.com/login",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "GET",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "bar0",
+                },
+                {
+                  "name": "foo3",
+                  "value": "bar3",
+                },
+                {
+                  "name": "foo1",
+                  "value": "bar1",
+                },
+              ],
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "http://exampletwo.com/login",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > custom-method.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "CUSTOM",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "bar0",
+                },
+                {
+                  "name": "foo3",
+                  "value": "bar3",
+                },
+                {
+                  "name": "foo1",
+                  "value": "bar1",
+                },
+              ],
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "http://test.loadimpact.com/login",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > formdata.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "GET",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "(binary)",
+                },
+              ],
+              "text": "",
+            },
+            "url": "http://example.com/login",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "GET",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "http://example.com/loginTwo",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "GET",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+            },
+            "url": "http://example.com/invalidForm",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "x-www-form-urlencoded",
+              },
+            ],
+            "method": "GET",
+            "postData": {
+              "mimeType": "x-www-form-urlencoded",
+            },
+            "url": "http://example.com/mimetype",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "x-www-form-urlencoded",
+              },
+            ],
+            "method": "GET",
+            "postData": {
+              "mimeType": "x-www-form-urlencoded; charset=utf-8",
+            },
+            "url": "http://example.com/mimetype",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > full.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "checks": [
+            {
+              "comment": "Validate token provided",
+              "expression": "$.data",
+              "type": 2,
+            },
+          ],
+          "comment": "Acquire auth token",
+          "index": 0,
+          "pageref": "login",
+          "request": {
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/json",
+              },
+            ],
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/x-www-urlencoded",
+              "text": "92n2nf093n",
+            },
+            "url": "https://httpbin.org/post",
+          },
+          "variables": [
+            {
+              "comment": "Extract auth token",
+              "expression": "$.data",
+              "name": "token",
+              "type": 0,
+            },
+          ],
+        },
+        {
+          "comment": "Exercise home page",
+          "index": 0,
+          "pageref": "static",
+          "request": {
+            "method": "GET",
+            "url": "https://httpbin.org/get?page=Home",
+          },
+        },
+        {
+          "checks": [
+            {
+              "comment": "Verify about page
+We've had failures in the past",
+              "condition": 0,
+              "subject": 0,
+              "type": 0,
+              "value": "AboutZipcurve",
+            },
+          ],
+          "comment": "Exercise about page",
+          "index": 1,
+          "pageref": "static",
+          "request": {
+            "method": "GET",
+            "url": "https://httpbin.org/get?page=AboutZipcurve",
+          },
+        },
+        {
+          "comment": "Test user page latency",
+          "index": 0,
+          "pageref": "dynamic",
+          "request": {
+            "headers": [
+              {
+                "name": "Authorization",
+                "value": "Bearer \${token}",
+              },
+            ],
+            "method": "GET",
+            "url": "https://httpbin.org/get?page=User",
+          },
+        },
+        {
+          "comment": "Load forum front page",
+          "index": 1,
+          "pageref": "dynamic",
+          "request": {
+            "headers": [
+              {
+                "name": "Authorization",
+                "value": "Bearer \${token}",
+              },
+            ],
+            "method": "GET",
+            "url": "https://httpbin.org/get?latest=874",
+          },
+          "variables": [
+            {
+              "comment": "Extract latest post ID",
+              "expression": "latest=(\\\\d+)",
+              "name": "post",
+              "type": 1,
+            },
+          ],
+        },
+        {
+          "checks": [
+            {
+              "comment": "Validate successful search",
+              "expression": "^2\\\\d\\\\d$",
+              "subject": 2,
+              "type": 3,
+            },
+            {
+              "condition": 0,
+              "subject": 0,
+              "type": 0,
+              "value": "kitten OR puppy OR quokka",
+            },
+          ],
+          "comment": "Exercise image search",
+          "index": 2,
+          "pageref": "dynamic",
+          "request": {
+            "headers": [
+              {
+                "name": "Authorization",
+                "value": "Bearer \${token}",
+              },
+            ],
+            "method": "POST",
+            "postData": {
+              "mimeType": "text/plain",
+              "text": "kitten OR puppy OR quokka
+result1:2345
+result2:9347",
+            },
+            "queryString": [
+              {
+                "comment": "Find kittens",
+                "name": "search",
+                "value": "kitten",
+              },
+              {
+                "comment": "Find puppies",
+                "name": "search",
+                "value": "puppy",
+              },
+              {
+                "comment": "Also find quokkas
+They are the best",
+                "name": "search",
+                "value": "quokka",
+              },
+            ],
+            "url": "https://httpbin.org/post",
+          },
+          "variables": [
+            {
+              "comment": "Extract first result ID",
+              "expression": "result1:(\\\\d+)",
+              "name": "first",
+              "type": 1,
+            },
+            {
+              "comment": "Extract second result ID",
+              "expression": "result2:(\\\\d+)",
+              "name": "second",
+              "type": 1,
+            },
+          ],
+        },
+        {
+          "checks": [
+            {
+              "comment": "Verify post successful",
+              "condition": 2,
+              "subject": 2,
+              "type": 0,
+              "value": "200",
+            },
+          ],
+          "index": 3,
+          "pageref": "dynamic",
+          "request": {
+            "comment": "Post about found images",
+            "headers": [
+              {
+                "name": "Authorization",
+                "value": "Bearer \${token}",
+              },
+            ],
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "text",
+                  "value": "Check out these cute pictures",
+                },
+                {
+                  "name": "link",
+                  "value": "http://example.com/image/\${first}",
+                },
+                {
+                  "name": "link",
+                  "value": "http://example.com/image/\${second}",
+                },
+              ],
+            },
+            "url": "https://httpbin.org/post",
+          },
+        },
+        {
+          "checks": [
+            {
+              "comment": "Verify delete successful",
+              "condition": 2,
+              "subject": 2,
+              "type": 0,
+              "value": "200",
+            },
+          ],
+          "index": 4,
+          "pageref": "dynamic",
+          "request": {
+            "comment": "Login",
+            "headers": [],
+            "method": "POST",
+            "postData": {
+              "mimeType": "multipart/form-data",
+              "params": [
+                {
+                  "name": "username",
+                  "value": "admin",
+                },
+                {
+                  "name": "password",
+                  "value": "123",
+                },
+              ],
+            },
+            "url": "http://test.k6.io/login",
+          },
+        },
+      ],
+      "pages": [
+        {
+          "id": "login",
+          "index": 0,
+          "title": "Perform login",
+        },
+        {
+          "comment": "Exercise static pages",
+          "id": "static",
+          "index": 1,
+          "title": "Static",
+        },
+        {
+          "comment": "Exercise dynamic app logic
+Highest latency",
+          "id": "dynamic",
+          "index": 2,
+          "title": "Dynamic",
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > invalid-url.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "CUSTOM",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "bar0",
+                },
+                {
+                  "name": "foo3",
+                  "value": "bar3",
+                },
+                {
+                  "name": "foo1",
+                  "value": "bar1",
+                },
+              ],
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "testloadimpact",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "CUSTOM",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "bar0",
+                },
+                {
+                  "name": "foo3",
+                  "value": "bar3",
+                },
+                {
+                  "name": "foo1",
+                  "value": "bar1",
+                },
+              ],
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > load-impact.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json",
+              },
+            ],
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{\\"user\\":\\"admin\\",\\"password\\":\\"123\\"}",
+            },
+            "url": "http://test.loadimpact.com/login",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > no-entries.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > no-success-status.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {},
+    "instancePath": "/log/entries/0/response/content",
+    "keyword": "required",
+    "message": "must have required property 'size'",
+    "params": {
+      "missingProperty": "size",
+    },
+    "parentSchema": {
+      "$id": "content.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "comment": {
+          "type": "string",
+        },
+        "compression": {
+          "type": "integer",
+        },
+        "encoding": {
+          "type": "string",
+        },
+        "mimeType": {
+          "type": "string",
+        },
+        "size": {
+          "type": "integer",
+        },
+        "text": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "size",
+        "mimeType",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "size",
+      "mimeType",
+    ],
+    "schemaPath": "content.json#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > post-data-conflict.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+              },
+            ],
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "foo0",
+                  "value": "bar0",
+                },
+                {
+                  "name": "foo3",
+                  "value": "bar3",
+                },
+                {
+                  "name": "foo1",
+                  "value": "bar1",
+                },
+              ],
+              "text": "foo0=bar0&foo1=bar1",
+            },
+            "url": "http://test.loadimpact.com/login",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > post-same-endpoint-diff-bodies.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "cache": {},
+      "request": {
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+          },
+        ],
+        "httpVersion": "HTTP/1.1",
+        "method": "POST",
+        "postData": {
+          "mimeType": "application/json",
+          "text": "{\\"params\\":null,\\"meta\\":{}}",
+        },
+        "url": "http://localhost:3000/api/users/queries/getCurrentUser",
+      },
+      "response": {
+        "_error": null,
+        "_transferSize": 354,
+        "bodySize": 120,
+        "content": {
+          "compression": 0,
+          "mimeType": "application/json",
+          "size": 120,
+          "text": "{\\"result\\":{\\"id\\":1,\\"name\\":\\"Luis Tejeda Sanchez\\",\\"email\\":\\"luis.tejeda@company.com\\",\\"role\\":\\"USER\\"},\\"error\\":null,\\"meta\\":{}}",
+        },
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json; charset=utf-8",
+          },
+        ],
+        "headersSize": 234,
+        "httpVersion": "HTTP/1.1",
+        "redirectURL": "",
+        "status": 200,
+        "statusText": "OK",
+      },
+    },
+    "instancePath": "/log/entries/0",
+    "keyword": "required",
+    "message": "must have required property 'startedDateTime'",
+    "params": {
+      "missingProperty": "startedDateTime",
+    },
+    "parentSchema": {
+      "$id": "entry.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "optional": true,
+      "properties": {
+        "cache": {
+          "$ref": "cache.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "connection": {
+          "type": "string",
+        },
+        "pageref": {
+          "type": "string",
+        },
+        "request": {
+          "$ref": "request.json#",
+        },
+        "response": {
+          "$ref": "response.json#",
+        },
+        "serverIPAddress": {
+          "oneOf": [
+            {
+              "format": "ipv4",
+            },
+            {
+              "format": "ipv6",
+            },
+          ],
+          "type": "string",
+        },
+        "startedDateTime": {
+          "format": "date-time",
+          "pattern": "^(\\\\d{4})(-)?(\\\\d\\\\d)(-)?(\\\\d\\\\d)(T)?(\\\\d\\\\d)(:)?(\\\\d\\\\d)(:)?(\\\\d\\\\d)(\\\\.\\\\d+)?(Z|([+-])(\\\\d\\\\d)(:)?(\\\\d\\\\d))",
+          "type": "string",
+        },
+        "time": {
+          "min": 0,
+          "type": "number",
+        },
+        "timings": {
+          "$ref": "timings.json#",
+        },
+      },
+      "required": [
+        "startedDateTime",
+        "time",
+        "request",
+        "response",
+        "cache",
+        "timings",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "startedDateTime",
+      "time",
+      "request",
+      "response",
+      "cache",
+      "timings",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > request-generator-all-status-and-method.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": "[2606:4700:3035::ac43:c9a3]",
+    "instancePath": "/log/entries/0/serverIPAddress",
+    "keyword": "format",
+    "message": "must match format \\"ipv4\\"",
+    "params": {
+      "format": "ipv4",
+    },
+    "parentSchema": {
+      "format": "ipv4",
+    },
+    "schema": "ipv4",
+    "schemaPath": "#/properties/serverIPAddress/oneOf/0/format",
+  },
+  {
+    "data": "[2606:4700:3035::ac43:c9a3]",
+    "instancePath": "/log/entries/0/serverIPAddress",
+    "keyword": "format",
+    "message": "must match format \\"ipv6\\"",
+    "params": {
+      "format": "ipv6",
+    },
+    "parentSchema": {
+      "format": "ipv6",
+    },
+    "schema": "ipv6",
+    "schemaPath": "#/properties/serverIPAddress/oneOf/1/format",
+  },
+  {
+    "data": "[2606:4700:3035::ac43:c9a3]",
+    "instancePath": "/log/entries/0/serverIPAddress",
+    "keyword": "oneOf",
+    "message": "must match exactly one schema in oneOf",
+    "params": {
+      "passingSchemas": null,
+    },
+    "parentSchema": {
+      "oneOf": [
+        {
+          "format": "ipv4",
+        },
+        {
+          "format": "ipv6",
+        },
+      ],
+      "type": "string",
+    },
+    "schema": [
+      {
+        "format": "ipv4",
+      },
+      {
+        "format": "ipv6",
+      },
+    ],
+    "schemaPath": "#/properties/serverIPAddress/oneOf",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > security.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json",
+              },
+              {
+                "name": "X-Auth-Token",
+                "value": "Secret",
+              },
+            ],
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{\\"user\\":\\"admin\\",\\"password\\":\\"123\\"}",
+            },
+            "url": "http://test.loadimpact.com/login",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > url.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json",
+              },
+            ],
+            "httpVersion": "HTTP/1.1",
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{\\"params\\":{\\"test\\": \\"true\\"},\\"meta\\":{}}",
+            },
+            "url": "https://google.com/login/date/2022-02-02/id/12345/uuid/123e4567-e89b-12d3-a456-426655440000",
+          },
+          "response": {
+            "_error": null,
+            "_transferSize": 354,
+            "bodySize": 120,
+            "content": {
+              "compression": 0,
+              "mimeType": "application/json",
+              "size": 120,
+              "text": "{\\"result\\":{\\"id\\":1,\\"name\\":\\"Luis Tejeda Sanchez\\",\\"email\\":\\"luis.tejeda@company.com\\",\\"role\\":\\"USER\\",\\"test\\": \\"true\\"},\\"error\\":null,\\"meta\\":{}}",
+            },
+            "headersSize": 234,
+            "httpVersion": "HTTP/1.1",
+            "redirectURL": "",
+            "status": 200,
+            "statusText": "OK",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json",
+              },
+            ],
+            "httpVersion": "HTTP/1.1",
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{\\"params\\":{\\"test\\": \\"true\\"},\\"meta\\":{}}",
+            },
+            "url": "https://google.com/login/date/2022-02-02",
+          },
+          "response": {
+            "_error": null,
+            "_transferSize": 354,
+            "bodySize": 120,
+            "content": {
+              "compression": 0,
+              "mimeType": "application/json",
+              "size": 120,
+              "text": "{\\"result\\":{\\"id\\":1,\\"name\\":\\"Luis Tejeda Sanchez\\",\\"email\\":\\"luis.tejeda@company.com\\",\\"role\\":\\"USER\\",\\"test\\": \\"true\\"},\\"error\\":null,\\"meta\\":{}}",
+            },
+            "headersSize": 234,
+            "httpVersion": "HTTP/1.1",
+            "redirectURL": "",
+            "status": 200,
+            "statusText": "OK",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json",
+              },
+            ],
+            "httpVersion": "HTTP/1.1",
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{\\"params\\":{\\"test\\": \\"true\\"},\\"meta\\":{}}",
+            },
+            "url": "https://google.com/login/uuid/123e4567-e89b-12d3-a456-426655440000",
+          },
+          "response": {
+            "_error": null,
+            "_transferSize": 354,
+            "bodySize": 120,
+            "content": {
+              "compression": 0,
+              "mimeType": "application/json",
+              "size": 120,
+              "text": "{\\"result\\":{\\"id\\":1,\\"name\\":\\"Luis Tejeda Sanchez\\",\\"email\\":\\"luis.tejeda@company.com\\",\\"role\\":\\"USER\\",\\"test\\": \\"true\\"},\\"error\\":null,\\"meta\\":{}}",
+            },
+            "headersSize": 234,
+            "httpVersion": "HTTP/1.1",
+            "redirectURL": "",
+            "status": 200,
+            "statusText": "OK",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json",
+              },
+            ],
+            "httpVersion": "HTTP/1.1",
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{\\"params\\":{\\"test\\": \\"true\\"},\\"meta\\":{}}",
+            },
+            "url": "https://google.com/login/id/1234567",
+          },
+          "response": {
+            "_error": null,
+            "_transferSize": 354,
+            "bodySize": 120,
+            "content": {
+              "compression": 0,
+              "mimeType": "application/json",
+              "size": 120,
+              "text": "{\\"result\\":{\\"id\\":1,\\"name\\":\\"Luis Tejeda Sanchez\\",\\"email\\":\\"luis.tejeda@company.com\\",\\"role\\":\\"USER\\",\\"test\\": \\"true\\"},\\"error\\":null,\\"meta\\":{}}",
+            },
+            "headersSize": 234,
+            "httpVersion": "HTTP/1.1",
+            "redirectURL": "",
+            "status": 200,
+            "statusText": "OK",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json",
+              },
+            ],
+            "httpVersion": "HTTP/1.1",
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{\\"params\\":{\\"test\\": \\"true\\"},\\"meta\\":{}}",
+            },
+            "url": "https://google.com/login/id/1234567/idTwo/1234567",
+          },
+          "response": {
+            "_error": null,
+            "_transferSize": 354,
+            "bodySize": 120,
+            "content": {
+              "compression": 0,
+              "mimeType": "application/json",
+              "size": 120,
+              "text": "{\\"result\\":{\\"id\\":1,\\"name\\":\\"Luis Tejeda Sanchez\\",\\"email\\":\\"luis.tejeda@company.com\\",\\"role\\":\\"USER\\",\\"test\\": \\"true\\"},\\"error\\":null,\\"meta\\":{}}",
+            },
+            "headersSize": 234,
+            "httpVersion": "HTTP/1.1",
+            "redirectURL": "",
+            "status": 200,
+            "statusText": "OK",
+          },
+        },
+        {
+          "index": 0,
+          "request": {
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json",
+              },
+            ],
+            "httpVersion": "HTTP/1.1",
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{\\"params\\":{\\"test\\": \\"true\\"},\\"meta\\":{}}",
+            },
+            "url": "https://google.com/login/id/1234567/idTwo/1234567/true",
+          },
+          "response": {
+            "_error": null,
+            "_transferSize": 354,
+            "bodySize": 120,
+            "content": {
+              "compression": 0,
+              "mimeType": "application/json",
+              "size": 120,
+              "text": "{\\"result\\":{\\"id\\":1,\\"name\\":\\"Luis Tejeda Sanchez\\",\\"email\\":\\"luis.tejeda@company.com\\",\\"role\\":\\"USER\\",\\"test\\": \\"true\\"},\\"error\\":null,\\"meta\\":{}}",
+            },
+            "headersSize": 234,
+            "httpVersion": "HTTP/1.1",
+            "redirectURL": "",
+            "status": 200,
+            "statusText": "OK",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > urlfull.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": {
+      "entries": [
+        {
+          "request": {
+            "method": "GET",
+            "url": "https://test-api.k6.io/public/crocodiles/",
+          },
+          "variables": [
+            {
+              "expression": "$[0].id",
+              "name": "bar",
+              "type": 0,
+            },
+            {
+              "expression": "$[0].name",
+              "name": "foo",
+              "type": 0,
+            },
+          ],
+        },
+        {
+          "request": {
+            "method": "GET",
+            "queryString": [
+              {
+                "name": "utm_source",
+                "value": "loadimpact.com",
+              },
+              {
+                "name": "color",
+                "value": "\${foo}",
+              },
+              {
+                "name": "token",
+                "value": "\${bar}",
+              },
+              {
+                "name": "token",
+                "value": "123",
+              },
+              {
+                "name": "isCool",
+                "value": "",
+              },
+              {
+                "name": "",
+                "value": "",
+              },
+            ],
+            "url": "http://test.loadimpact.com/path",
+          },
+        },
+        {
+          "request": {
+            "comment": "Post about found images",
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "text",
+                  "value": "Check out these cute pictures",
+                },
+                {
+                  "name": "link",
+                  "value": "http://example.com/image/\${foo}",
+                },
+                {
+                  "name": "link",
+                  "value": "http://example.com/image/\${bar}",
+                },
+              ],
+            },
+            "url": "https://httpbin.org/post",
+          },
+        },
+        {
+          "request": {
+            "comment": "Post about found images",
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/x-www-form-urlencoded",
+              "params": [
+                {
+                  "name": "text",
+                  "value": "Check out these cute pictures",
+                },
+                {
+                  "name": "link",
+                  "value": "http://example.com/image",
+                },
+                {
+                  "name": "link",
+                  "value": "http://example.com/image",
+                },
+              ],
+            },
+            "url": "https://httpbin.org/post",
+          },
+        },
+        {
+          "request": {
+            "method": "GET",
+            "queryString": [
+              {
+                "name": "utm_source",
+                "value": "loadimpact.com",
+              },
+              {
+                "name": "color",
+                "value": "foo",
+              },
+              {
+                "name": "token",
+                "value": "bar",
+              },
+              {
+                "name": "token",
+                "value": "123",
+              },
+              {
+                "name": "isCool",
+                "value": "",
+              },
+              {
+                "name": "",
+                "value": "",
+              },
+            ],
+            "url": "http://test.loadimpact.com/path",
+          },
+        },
+      ],
+    },
+    "instancePath": "/log",
+    "keyword": "required",
+    "message": "must have required property 'version'",
+    "params": {
+      "missingProperty": "version",
+    },
+    "parentSchema": {
+      "$id": "log.json#",
+      "$schema": "http://json-schema.org/draft-06/schema#",
+      "properties": {
+        "browser": {
+          "$ref": "browser.json#",
+        },
+        "comment": {
+          "type": "string",
+        },
+        "creator": {
+          "$ref": "creator.json#",
+        },
+        "entries": {
+          "items": {
+            "$ref": "entry.json#",
+          },
+          "type": "array",
+        },
+        "pages": {
+          "items": {
+            "$ref": "page.json#",
+          },
+          "type": "array",
+        },
+        "version": {
+          "type": "string",
+        },
+      },
+      "required": [
+        "version",
+        "creator",
+        "entries",
+      ],
+      "type": "object",
+    },
+    "schema": [
+      "version",
+      "creator",
+      "entries",
+    ],
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`Throws error on invalid HAR > www.ozon.ru.har Validation errors are what was expected 1`] = `
+[
+  {
+    "data": "",
+    "instancePath": "/log/entries/112/serverIPAddress",
+    "keyword": "format",
+    "message": "must match format \\"ipv4\\"",
+    "params": {
+      "format": "ipv4",
+    },
+    "parentSchema": {
+      "format": "ipv4",
+    },
+    "schema": "ipv4",
+    "schemaPath": "#/properties/serverIPAddress/oneOf/0/format",
+  },
+  {
+    "data": "",
+    "instancePath": "/log/entries/112/serverIPAddress",
+    "keyword": "format",
+    "message": "must match format \\"ipv6\\"",
+    "params": {
+      "format": "ipv6",
+    },
+    "parentSchema": {
+      "format": "ipv6",
+    },
+    "schema": "ipv6",
+    "schemaPath": "#/properties/serverIPAddress/oneOf/1/format",
+  },
+  {
+    "data": "",
+    "instancePath": "/log/entries/112/serverIPAddress",
+    "keyword": "oneOf",
+    "message": "must match exactly one schema in oneOf",
+    "params": {
+      "passingSchemas": null,
+    },
+    "parentSchema": {
+      "oneOf": [
+        {
+          "format": "ipv4",
+        },
+        {
+          "format": "ipv6",
+        },
+      ],
+      "type": "string",
+    },
+    "schema": [
+      {
+        "format": "ipv4",
+      },
+      {
+        "format": "ipv6",
+      },
+    ],
+    "schemaPath": "#/properties/serverIPAddress/oneOf",
+  },
+]
+`;
