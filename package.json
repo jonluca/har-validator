@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "Jonluca DeCaro <harvalidator@jonlu.ca>",
   "description": "Validate a HAR file using a compiled AJV schema validator",
-  "types": "dist/mjs/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],
@@ -37,7 +37,7 @@
     "prepublishOnly": "yarn schema:compile && yarn build",
     "lint": "eslint src",
     "schema:compile": "node scripts/compile-har-schema.mjs",
-    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node scripts/fixup.js",
+    "build": "rm -fr dist/* && tsc && node scripts/build.mjs",
     "typecheck": "tsc --noEmit",
     "prettier": "prettier --write \"**/*.+(js|jsx|ts|tsx|har||json|css|md)\"",
     "test": "vitest --coverage",

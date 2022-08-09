@@ -18,7 +18,26 @@ import type {
   Timings,
 } from "har-format";
 import * as validators from "./validate.js";
-import type { DataValidationCxt, ErrorObject } from "ajv/lib/types";
+
+export interface DataValidationCxt<T extends string | number = string | number> {
+  instancePath: string;
+  parentData: { [K in T]: any }; // object or array
+  parentDataProperty: T; // string or number
+  rootData: Record<string, any> | any[];
+}
+interface ErrorObject<K extends string = string, P = Record<string, any>, S = unknown> {
+  keyword: K;
+  instancePath: string;
+  schemaPath: string;
+  params: P;
+  // Added to validation errors of "propertyNames" keyword schema
+  propertyName?: string;
+  // Excluded if option `messages` set to false.
+  message?: string;
+  // These are added with the `verbose` option.
+  schema?: S;
+  data?: unknown;
+}
 
 interface ValidatorFunction {
   (data: unknown, opts?: Omit<DataValidationCxt, "dynamicAnchors">): boolean;
